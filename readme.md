@@ -1,16 +1,30 @@
 # Microservices Training and Proof of Concept project
 
-Work in progress.
-Proof of concept type project to experiment with various microservice technologies.
+## Overview
 
-Goals to accomplish:
-* Include design artifacts simulating how Domain Driven Design using Event Storming sessions
+Work in progress.
+
+Proof of concept type project to experiment with various microservice technologies and provide reference for future work.
+
+## High Level Goals and Plans:
+* Include design artifacts simulating how Domain Driven Design using Event Storming sessions, C4 model diagrams
 might have been used to do initial design and requirements gathering were this a real project.
 * Implement multiple microservice projects and user interfaces.
-* Some specific technologies to incorporate:
+* Implement event driven messaging architecture (Kafka)
+* Fully containerized
+
+## Notes on Specific Technologies to incorporate and try out:
+
   * Eclipse STS IDE
   * Gradle builds
-  * Spring Boot
+  * Spring:
+    * Spring Boot
+    * Spring DevTools - runtime('org.springframework.boot:spring-boot-devtools')
+    * Spring Web - compile('org.springframework.boot:spring-boot-starter-web')
+    * Spring Test - testCompile('org.springframework.boot:spring-boot-starter-test')
+    * Spring Actuator - compile('org.springframework.boot:spring-boot-starter-actuator')
+    * Spring Cloud Config - compile('org.springframework.cloud:spring-cloud-starter-config')
+    
   * Continuous Delivery and Deployment to AWS, Google Cloud, Pivotal Cloud
   * Auto scaling, Erueka naming server, Ribbon
   * Netflix OSS Components - hystrix, ...
