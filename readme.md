@@ -7,22 +7,26 @@ Goals to accomplish:
 * Include design artifacts simulating how Domain Driven Design using Event Storming sessions
 might have been used to do initial design and requirements gathering were this a real project.
 * Implement multiple microservice projects and user interfaces.
-* Some specific technologies to incorperate:
-** Continous Deliverery and Deployment to AWS, Google Cloud, Pivotal Cloud
-** Auto scaling, Erueka naming server, Ribbon
-** Netflix OSS Components - hystrix, ...
-** Dockerized containers, Kubernetes orchestration
-** Github web and issue trakcking
-** Zuul, Spring Cloud Sleuth
-** Spring, Spring Boot, Spring Cloud Config Server, Spring Data, Spring Cloud Slueth
-** In-memory Databases, MySQL, Postgres
-** Feign Rest Client
-** Zuul API Gateway
-** UI's - Thymeleaf, Anglular, React
-** Messaging - RabbitMQ, Kafka
-** Distributed Tracing, Zipkin
-** Spring cloud bus
-** Fault Tolerance with Hystrix
+* Some specific technologies to incorporate:
+  * Eclipse STS IDE
+  * Gradle builds
+  * Spring Boot
+  * Continuous Delivery and Deployment to AWS, Google Cloud, Pivotal Cloud
+  * Auto scaling, Erueka naming server, Ribbon
+  * Netflix OSS Components - hystrix, ...
+  * In-memory Redis caching
+  * Dockerized containers, Kubernetes orchestration
+  * Github web and issue trakcking
+  * Zuul, Spring Cloud Sleuth
+  * Spring, Spring Boot, Spring Cloud Config Server, Spring Data, Spring Cloud Slueth
+  * In-memory Databases, MySQL, Postgres
+  * Feign Rest Client
+  * Zuul API Gateway
+  * UI's - Thymeleaf, Anglular, React
+  * Messaging - RabbitMQ, Kafka
+  * Distributed Tracing, Zipkin
+  * Spring cloud bus
+  * Fault Tolerance with Hystrix
 
 
 ## Tentative Ports
