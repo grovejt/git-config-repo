@@ -652,11 +652,11 @@ function setDocumentScrollTop(ypos)
  <li>Selenium ui testing</li> 
  <li>Fully containerized</li> 
 </ul> 
-<h2> <a id="notes-on-specific-technologies-to-incorporate-and-try-out" class="anchor" href="#notes-on-specific-technologies-to-incorporate-and-try-out" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Notes on Specific Technologies to incorporate and try out:</h2> 
+<h2> <a id="raw-notes-on-specific-technologies-to-incorporate-and-try-out" class="anchor" href="#raw-notes-on-specific-technologies-to-incorporate-and-try-out" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Raw Notes on Specific Technologies to incorporate and try out:</h2> 
 <ul> 
- <li>Eclipse STS IDE</li> 
- <li>Gradle builds</li> 
- <li>Spring: 
+ <li> <p>Eclipse STS IDE</p> </li> 
+ <li> <p>Gradle builds</p> </li> 
+ <li> <p>Spring:</p> 
   <ul> 
    <li>Spring Boot</li> 
    <li>Spring DevTools - runtime('org.springframework.boot:spring-boot-devtools')</li> 
@@ -666,30 +666,56 @@ function setDocumentScrollTop(ypos)
    <li>Spring Data - compile('org.springframework.boot:spring-boot-starter-data-jpa')</li> 
    <li>Spring Cloud Config - compile('org.springframework.cloud:spring-cloud-starter-config')</li> 
   </ul> </li> 
- <li>JPA, Flyway 
+ <li> <p>H2 in-memory database - compile('com.h2database:h2')</p> </li> 
+ <li> <p>Feign Rest Client</p> 
   <ul> 
-   <li>In memory h2 database - compile('com.h2database:h2')</li> 
+   <li>a declarative HTTP client developed by Netflix that makes calling other microservices much easier.</li> 
+   <li>provides integration with Ribbon client side load balancing.</li> 
+   <li><a href="https://cloud.spring.io/spring-cloud-netflix/multi/multi_spring-cloud-feign.html" rel="nofollow">https://cloud.spring.io/spring-cloud-netflix/multi/multi_spring-cloud-feign.html</a></li> 
+   <li><a href="https://www.baeldung.com/intro-to-feign" rel="nofollow">https://www.baeldung.com/intro-to-feign</a></li> 
+   <li>compile('org.springframework.cloud:spring-cloud-starter-openfeign')</li> 
   </ul> </li> 
- <li>Continuous Delivery and Deployment to AWS, Google Cloud, Pivotal Cloud</li> 
- <li>Auto scaling, Erueka naming server, Ribbon</li> 
- <li>Netflix OSS Components - hystrix, ...</li> 
- <li>In-memory Redis caching</li> 
- <li>Dockerized containers, Kubernetes orchestration</li> 
- <li>Github web and issue trakcking</li> 
- <li>Zuul, Spring Cloud Sleuth</li> 
- <li>Spring, Spring Boot, Spring Cloud Config Server, Spring Data, Spring Cloud Slueth</li> 
- <li>In-memory Databases, MySQL, Postgres</li> 
- <li>Feign Rest Client</li> 
- <li>Zuul API Gateway</li> 
- <li>UI's - Thymeleaf, Anglular, React</li> 
- <li>Messaging - RabbitMQ, Kafka</li> 
- <li>Distributed Tracing, Zipkin</li> 
- <li>Spring cloud bus</li> 
- <li>Security concerns, OAuth, facebook and google id's, ...</li> 
- <li>Fault Tolerance with Hystrix</li> 
- <li>Try out an AWS lamba serverless implementation of the currency converter.</li> 
- <li>Choas monkey</li> 
- <li>Python service, perhaps some type of machine learning service?</li> 
+ <li> <p>Ribbon</p> 
+  <ul> 
+   <li>Netflix component for load balancing.</li> 
+   <li>Ribbon is a Inter Process Communication (remote procedure calls) library with built in software load balancers. The primary usage model involves REST calls with various serialization scheme support.</li> 
+   <li><a href="https://cloud.spring.io/spring-cloud-netflix/multi/multi_spring-cloud-ribbon.html" rel="nofollow">https://cloud.spring.io/spring-cloud-netflix/multi/multi_spring-cloud-ribbon.html</a></li> 
+   <li>compile('org.springframework.cloud:spring-cloud-starter-netflix-ribbon')</li> 
+   <li>Used in currency-conversion-service to load balance across multiple instances of the currency-exchange service.</li> 
+  </ul> </li> 
+ <li> <p>Eureka Naming Server from Netflix</p> 
+  <ul> 
+   <li>Eureka is a REST (Representational State Transfer) based service that is primarily used in the AWS cloud for locating services for the purpose of load balancing and failover of middle-tier servers.</li> 
+   <li><a href="https://spring.io/guides/gs/service-registration-and-discovery/" rel="nofollow">https://spring.io/guides/gs/service-registration-and-discovery/</a></li> 
+   <li><a href="https://github.com/Netflix/eureka/wiki/Eureka-at-a-glance">https://github.com/Netflix/eureka/wiki/Eureka-at-a-glance</a></li> 
+   <li><a href="http://www.springboottutorial.com/microservices-with-spring-boot-part-5-eureka-naming-server" rel="nofollow">http://www.springboottutorial.com/microservices-with-spring-boot-part-5-eureka-naming-server</a></li> 
+   <li>services register themselves with the naming server when they come up and the naming server provides service discovery to client services.</li> 
+   <li>limits-service, currency-calculation-service and currency-exchange-server register with eureka naming server.</li> 
+   <li>compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-server')</li> 
+   <li>compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')</li> 
+  </ul> </li> 
+ <li> <p>Flyway</p> </li> 
+ <li> <p>Continuous Delivery and Deployment to AWS, Google Cloud, Pivotal Cloud</p> </li> 
+ <li> <p>Auto scaling, Erueka naming server, Ribbon</p> </li> 
+ <li> <p>Netflix OSS Components - hystrix, ...</p> </li> 
+ <li> <p>In-memory Redis caching</p> </li> 
+ <li> <p>Dockerized containers, Kubernetes orchestration</p> </li> 
+ <li> <p>Github web and issue tracking</p> </li> 
+ <li> <p>Zuul, Spring Cloud Sleuth</p> </li> 
+ <li> <p>Spring, Spring Boot, Spring Cloud Config Server, Spring Data, Spring Cloud Slueth</p> </li> 
+ <li> <p>In-memory Databases, MySQL, Postgres</p> </li> 
+ <li> <p>Swagger api docs</p> </li> 
+ <li> <p>Zuul API Gateway</p> </li> 
+ <li> <p>UI's - Thymeleaf, Anglular, React</p> </li> 
+ <li> <p>Messaging - RabbitMQ, Kafka</p> </li> 
+ <li> <p>Distributed Tracing, Zipkin</p> </li> 
+ <li> <p>Spring cloud bus</p> </li> 
+ <li> <p>Security concerns, OAuth, facebook and google id's, ...</p> </li> 
+ <li> <p>Fault Tolerance with Hystrix</p> </li> 
+ <li> <p>Blue/Green and Canary Deployments</p> </li> 
+ <li> <p>Try out an AWS lamba serverless implementation of the currency converter.</p> </li> 
+ <li> <p>Choas monkey</p> </li> 
+ <li> <p>Python service, perhaps some type of machine learning service?</p> </li> 
 </ul> 
 <h2> <a id="tentative-ports" class="anchor" href="#tentative-ports" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tentative Ports</h2> 
 <table> 

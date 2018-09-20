@@ -15,10 +15,12 @@ might have been used to do initial design and requirements gathering were this a
 * Selenium ui testing
 * Fully containerized
 
-## Notes on Specific Technologies to incorporate and try out:
+## Raw Notes on Specific Technologies to incorporate and try out:
 
   * Eclipse STS IDE
+  
   * Gradle builds
+  
   * Spring:
     * Spring Boot
     * Spring DevTools - runtime('org.springframework.boot:spring-boot-devtools')
@@ -27,18 +29,44 @@ might have been used to do initial design and requirements gathering were this a
     * Spring Actuator - compile('org.springframework.boot:spring-boot-starter-actuator')
     * Spring Data - compile('org.springframework.boot:spring-boot-starter-data-jpa')
     * Spring Cloud Config - compile('org.springframework.cloud:spring-cloud-starter-config')
-  * JPA, Flyway  
-    * In memory h2 database - compile('com.h2database:h2')
+    
+  * H2 in-memory database - compile('com.h2database:h2')
+  
+  * Feign Rest Client
+    * a declarative HTTP client developed by Netflix that makes calling other microservices much easier.
+    * provides integration with Ribbon client side load balancing.
+    * https://cloud.spring.io/spring-cloud-netflix/multi/multi_spring-cloud-feign.html
+    * https://www.baeldung.com/intro-to-feign
+    * compile('org.springframework.cloud:spring-cloud-starter-openfeign')
+  
+  * Ribbon
+    * Netflix component for load balancing.
+    * Ribbon is a Inter Process Communication (remote procedure calls) library with built in software load balancers. The primary usage model involves REST calls with various serialization scheme support.
+    * https://cloud.spring.io/spring-cloud-netflix/multi/multi_spring-cloud-ribbon.html
+    * compile('org.springframework.cloud:spring-cloud-starter-netflix-ribbon')
+    * Used in currency-conversion-service to load balance across multiple instances of the currency-exchange service.
+  
+  * Eureka Naming Server from Netflix
+    * Eureka is a REST (Representational State Transfer) based service that is primarily used in the AWS cloud for locating services for the purpose of load balancing and failover of middle-tier servers. 
+    * https://spring.io/guides/gs/service-registration-and-discovery/
+    * https://github.com/Netflix/eureka/wiki/Eureka-at-a-glance
+    * http://www.springboottutorial.com/microservices-with-spring-boot-part-5-eureka-naming-server
+    * services register themselves with the naming server when they come up and the naming server provides service discovery to client services.
+    * limits-service, currency-calculation-service and currency-exchange-server register with eureka naming server.
+    * 	compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-server')
+    * compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')
+  
+  * Flyway  
   * Continuous Delivery and Deployment to AWS, Google Cloud, Pivotal Cloud
   * Auto scaling, Erueka naming server, Ribbon
   * Netflix OSS Components - hystrix, ...
   * In-memory Redis caching
   * Dockerized containers, Kubernetes orchestration
-  * Github web and issue trakcking
+  * Github web and issue tracking
   * Zuul, Spring Cloud Sleuth
   * Spring, Spring Boot, Spring Cloud Config Server, Spring Data, Spring Cloud Slueth
   * In-memory Databases, MySQL, Postgres
-  * Feign Rest Client
+  * Swagger api docs
   * Zuul API Gateway
   * UI's - Thymeleaf, Anglular, React
   * Messaging - RabbitMQ, Kafka
@@ -46,6 +74,7 @@ might have been used to do initial design and requirements gathering were this a
   * Spring cloud bus
   * Security concerns, OAuth, facebook and google id's, ...
   * Fault Tolerance with Hystrix
+  * Blue/Green and Canary Deployments
   * Try out an AWS lamba serverless implementation of the currency converter.
   * Choas monkey
   * Python service, perhaps some type of machine learning service?
