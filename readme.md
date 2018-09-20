@@ -1,4 +1,4 @@
-# Microservices with Spring Boot and Spring Cloud
+# Microservices Training and Proof of Concept project
 
 Work in progress.
 Proof of concept type project to experiment with various microservice technologies.
