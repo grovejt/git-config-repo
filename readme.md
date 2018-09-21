@@ -17,7 +17,7 @@ might have been used to do initial design and requirements gathering were this a
 * Selenium ui testing
 * Fully containerized
 
-## Overveiw Diagram (in progress)
+## Overview Diagram (in progress)
 
 ![](./docs/OverviewDiagram.png?raw=true "Overview Diagram")
 
