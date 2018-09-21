@@ -77,8 +77,12 @@ might have been used to do initial design and requirements gathering were this a
   	* compile 'org.springframework.cloud:spring-cloud-starter-sleuth'
   	 
   * Zipkin - centralized logging.
+    * compile('org.springframework.cloud:spring-cloud-starter-zipkin')
     * https://spring.io/blog/2016/02/15/distributed-tracing-with-spring-cloud-sleuth-and-spring-cloud-zipkin
     * https://www.baeldung.com/tracing-services-with-zipkin
+    * todo - see https://medium.com/oracledevs/setup-a-distributed-tracing-infrastructure-with-zipkin-kafka-and-cassandra-d0a68fb3eee6 
+  
+  * RabbitMQ
   
   
   * Flyway  
@@ -132,3 +136,4 @@ might have been used to do initial design and requirements gathering were this a
 | Spring Cloud Bus Refresh                     | http://localhost:8080/bus/refresh |
 |                                              |                                   |
 | H2 Console (currency-exchange-db)            | http://localhost:8000/h2-console  (use jbdc url: 'jdbc:h2:mem:testdb'                     |
+| RabbitMQ Console                             | http://localhost:15672/  (user guest, pw guest                     |
