@@ -83,6 +83,7 @@ might have been used to do initial design and requirements gathering were this a
     * todo - see https://medium.com/oracledevs/setup-a-distributed-tracing-infrastructure-with-zipkin-kafka-and-cassandra-d0a68fb3eee6 
   
   * RabbitMQ
+    * https://spring.io/guides/gs/messaging-rabbitmq/
   
   
   * Flyway  
