@@ -40,14 +40,14 @@ might have been used to do initial design and requirements gathering were this a
     
   * H2 in-memory database - compile('com.h2database:h2')
   
-  * Feign Rest Client
+  * Feign Rest Client to make REST calls easier
     * a declarative HTTP client developed by Netflix that makes calling other microservices much easier.
     * provides integration with Ribbon client side load balancing.
     * https://cloud.spring.io/spring-cloud-netflix/multi/multi_spring-cloud-feign.html
     * https://www.baeldung.com/intro-to-feign
     * compile('org.springframework.cloud:spring-cloud-starter-openfeign')
   
-  * Ribbon
+  * Ribbon for Load Balancing
     * Netflix component for load balancing.
     * Ribbon is a Inter Process Communication (remote procedure calls) library with built in software load balancers. The primary usage model involves REST calls with various serialization scheme support.
     * https://cloud.spring.io/spring-cloud-netflix/multi/multi_spring-cloud-ribbon.html
@@ -70,6 +70,17 @@ might have been used to do initial design and requirements gathering were this a
     * compile('org.springframework.cloud:spring-cloud-starter-netflix-zuul')
     * Zuul the Gatekeeper of Gozer is a demigod and minion of Gozer, The Destructor, alongside Vinz Clortho the Keymaster. It possessed Dana Barrett in Ghostbusters.
   
+  * Distributed Tracing with Spring Cloud Sleuth 
+    * https://cloud.spring.io/spring-cloud-sleuth/
+    * https://www.baeldung.com/spring-cloud-sleuth-single-application
+  	* Unique id for tracking requests
+  	* compile 'org.springframework.cloud:spring-cloud-starter-sleuth'
+  	 
+  * Zipkin - centralized logging.
+    * https://spring.io/blog/2016/02/15/distributed-tracing-with-spring-cloud-sleuth-and-spring-cloud-zipkin
+    * https://www.baeldung.com/tracing-services-with-zipkin
+  
+  
   * Flyway  
   * Continuous Delivery and Deployment to AWS, Google Cloud, Pivotal Cloud
   * Auto scaling, Erueka naming server, Ribbon
@@ -77,8 +88,6 @@ might have been used to do initial design and requirements gathering were this a
   * In-memory Redis caching
   * Dockerized containers, Kubernetes orchestration
   * Github web and issue tracking
-  * Spring Cloud Sleuth
-  * Spring, Spring Boot, Spring Cloud Config Server, Spring Data, Spring Cloud Slueth
   * In-memory Databases, MySQL, Postgres
   * Swagger api docs
   * Zuul API Gateway
