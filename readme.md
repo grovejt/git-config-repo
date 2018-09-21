@@ -17,6 +17,11 @@ might have been used to do initial design and requirements gathering were this a
 * Selenium ui testing
 * Fully containerized
 
+## Overdiagram (in progress)
+
+![](./docs/OverviewDiagram.png?raw=true "Overview Diagram")
+
+
 ## Raw Notes on Specific Technologies to incorporate and try out:
 
   * Eclipse STS IDE
