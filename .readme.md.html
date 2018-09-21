@@ -652,6 +652,7 @@ function setDocumentScrollTop(ypos)
  <li>Spock testing</li> 
  <li>Selenium ui testing</li> 
  <li>Fully containerized</li> 
+ <li>Continuous Delivery and Deployment to Pivotal, AWS, and Google Cloud, perhaps with GoCD</li> 
 </ul> 
 <h2> <a id="overview-diagram-in-progress" class="anchor" href="#overview-diagram-in-progress" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Overview Diagram (in progress)</h2> 
 <p><a href="./docs/OverviewDiagram.png?raw=true" target="_blank" rel="noopener noreferrer"><img src="./docs/OverviewDiagram.png?raw=true" alt="" title="Overview Diagram" style="max-width:100%;" /></a></p> 
@@ -697,7 +698,13 @@ function setDocumentScrollTop(ypos)
    <li>compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-server')</li> 
    <li>compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')</li> 
   </ul> </li> 
- <li> <p>Zuul - api gateway</p> </li> 
+ <li> <p>Zuul - api gateway, netflix component</p> 
+  <ul> 
+   <li>Zuul is an edge service that provides dynamic routing, monitoring, resiliency, security, and more. Please view the wiki for usage, information, HOWTO, etc <a href="https://github.com/Netflix/zuul/wiki">https://github.com/Netflix/zuul/wiki</a> </li> 
+   <li><a href="https://github.com/Netflix/zuul">https://github.com/Netflix/zuul</a></li> 
+   <li>compile('org.springframework.cloud:spring-cloud-starter-netflix-zuul')</li> 
+   <li>Zuul the Gatekeeper of Gozer is a demigod and minion of Gozer, The Destructor, alongside Vinz Clortho the Keymaster. It possessed Dana Barrett in Ghostbusters.</li> 
+  </ul> </li> 
  <li> <p>Flyway</p> </li> 
  <li> <p>Continuous Delivery and Deployment to AWS, Google Cloud, Pivotal Cloud</p> </li> 
  <li> <p>Auto scaling, Erueka naming server, Ribbon</p> </li> 

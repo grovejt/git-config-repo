@@ -16,6 +16,7 @@ might have been used to do initial design and requirements gathering were this a
 * Spock testing
 * Selenium ui testing
 * Fully containerized
+* Continuous Delivery and Deployment to Pivotal, AWS, and Google Cloud, perhaps with GoCD
 
 ## Overview Diagram (in progress)
 
@@ -60,11 +61,14 @@ might have been used to do initial design and requirements gathering were this a
     * http://www.springboottutorial.com/microservices-with-spring-boot-part-5-eureka-naming-server
     * services register themselves with the naming server when they come up and the naming server provides service discovery to client services.
     * limits-service, currency-calculation-service and currency-exchange-server register with eureka naming server.
-    * 	compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-server')
+    * compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-server')
     * compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')
   
-  * Zuul - api gateway
-  
+  * Zuul - api gateway, netflix component 
+    * Zuul is an edge service that provides dynamic routing, monitoring, resiliency, security, and more. Please view the wiki for usage, information, HOWTO, etc https://github.com/Netflix/zuul/wiki 
+    * https://github.com/Netflix/zuul
+    * compile('org.springframework.cloud:spring-cloud-starter-netflix-zuul')
+    * Zuul the Gatekeeper of Gozer is a demigod and minion of Gozer, The Destructor, alongside Vinz Clortho the Keymaster. It possessed Dana Barrett in Ghostbusters.
   
   * Flyway  
   * Continuous Delivery and Deployment to AWS, Google Cloud, Pivotal Cloud
