@@ -63,6 +63,9 @@ might have been used to do initial design and requirements gathering were this a
     * 	compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-server')
     * compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')
   
+  * Zuul - api gateway
+  
+  
   * Flyway  
   * Continuous Delivery and Deployment to AWS, Google Cloud, Pivotal Cloud
   * Auto scaling, Erueka naming server, Ribbon
@@ -70,7 +73,7 @@ might have been used to do initial design and requirements gathering were this a
   * In-memory Redis caching
   * Dockerized containers, Kubernetes orchestration
   * Github web and issue tracking
-  * Zuul, Spring Cloud Sleuth
+  * Spring Cloud Sleuth
   * Spring, Spring Boot, Spring Cloud Config Server, Spring Data, Spring Cloud Slueth
   * In-memory Databases, MySQL, Postgres
   * Swagger api docs
