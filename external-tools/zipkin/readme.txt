@@ -1,0 +1,1 @@
+This contains the latest zipkin jar that can be ran standalone.

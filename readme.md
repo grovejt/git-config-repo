@@ -63,6 +63,7 @@ might have been used to do initial design and requirements gathering were this a
     * limits-service, currency-calculation-service and currency-exchange-server register with eureka naming server.
     * compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-server')
     * compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')
+    * see also - etcd, Consul, Apache Zookeeper
   
   * Zuul - api gateway, netflix component 
     * Zuul is an edge service that provides dynamic routing, monitoring, resiliency, security, and more. Please view the wiki for usage, information, HOWTO, etc https://github.com/Netflix/zuul/wiki 
@@ -71,19 +72,22 @@ might have been used to do initial design and requirements gathering were this a
     * Zuul the Gatekeeper of Gozer is a demigod and minion of Gozer, The Destructor, alongside Vinz Clortho the Keymaster. It possessed Dana Barrett in Ghostbusters.
   
   * Distributed Tracing with Spring Cloud Sleuth 
-    * https://cloud.spring.io/spring-cloud-sleuth/
+    * https://cloud.spring.io/spring-cloud-sleuth/single/spring-cloud-sleuth.html
     * https://www.baeldung.com/spring-cloud-sleuth-single-application
   	* Unique id for tracking requests
   	* compile 'org.springframework.cloud:spring-cloud-starter-sleuth'
   	 
   * Zipkin - centralized logging.
     * compile('org.springframework.cloud:spring-cloud-starter-zipkin')
+    * https://sivalabs.in/2018/03/microservices-part-6-distributed-tracing-with-spring-cloud-sleuth-and-zipkin/
     * https://spring.io/blog/2016/02/15/distributed-tracing-with-spring-cloud-sleuth-and-spring-cloud-zipkin
     * https://www.baeldung.com/tracing-services-with-zipkin
+    * http://callistaenterprise.se/blogg/teknik/2017/07/29/building-microservices-part-7-distributed-tracing/
     * todo - see https://medium.com/oracledevs/setup-a-distributed-tracing-infrastructure-with-zipkin-kafka-and-cassandra-d0a68fb3eee6 
   
   * RabbitMQ
     * https://spring.io/guides/gs/messaging-rabbitmq/
+    * compile('org.springframework.amqp:spring-rabbit')
   
   
   * Flyway  
