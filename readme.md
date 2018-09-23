@@ -89,6 +89,9 @@ might have been used to do initial design and requirements gathering were this a
     * https://spring.io/guides/gs/messaging-rabbitmq/
     * compile('org.springframework.amqp:spring-rabbit')
   
+  * Spring Cloud Starter Bus
+    * push config changes to services
+    * compile('org.springframework.cloud:spring-cloud-starter-bus-amqp')
   
   * Flyway  
   * Continuous Delivery and Deployment to AWS, Google Cloud, Pivotal Cloud
@@ -138,7 +141,7 @@ might have been used to do initial design and requirements gathering were this a
 | Eureka                                       | http://localhost:8761/ |
 | Zuul - Currency Exchange & Exchange Services | http://localhost:8765/currency-exchange-service/currency-exchange/from/EUR/to/INR http://localhost:8765/currency-conversion-service/currency-converter-feign/from/USD/to/INR/quantity/10|
 | Zipkin                                       | http://localhost:9411/zipkin/ |
-| Spring Cloud Bus Refresh                     | http://localhost:8080/bus/refresh |
+| Spring Cloud Bus Refresh                     | http://localhost:8080/actuator/bus-refresh |
 |                                              |                                   |
 | H2 Console (currency-exchange-db)            | http://localhost:8000/h2-console  (use jbdc url: 'jdbc:h2:mem:testdb'                     |
 | RabbitMQ Console                             | http://localhost:15672/  (user guest, pw guest                     |
