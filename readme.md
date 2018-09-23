@@ -93,6 +93,11 @@ might have been used to do initial design and requirements gathering were this a
     * push config changes to services
     * compile('org.springframework.cloud:spring-cloud-starter-bus-amqp')
   
+  * Hystix
+    * Fault Tolerance 
+    * compile ("org.springframework.cloud:spring-cloud-starter-netflix-hystrix")
+    * https://dzone.com/articles/microservices-part-4-spring-cloud-circuit-breaker
+  
   * Flyway  
   * Continuous Delivery and Deployment to AWS, Google Cloud, Pivotal Cloud
   * Auto scaling, Erueka naming server, Ribbon
@@ -108,7 +113,6 @@ might have been used to do initial design and requirements gathering were this a
   * Distributed Tracing, Zipkin
   * Spring cloud bus
   * Security concerns, OAuth, facebook and google id's, ...
-  * Fault Tolerance with Hystrix
   * Blue/Green and Canary Deployments
   * Try out an AWS lamba serverless implementation of the currency converter.
   * Choas monkey
